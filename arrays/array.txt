@@ -1,0 +1,55 @@
+=> Array is a list of variables of similar types.
+eg: 1. {1,2,3,4}       <- this is an Array.
+2. {'a','b','c','d'}   <- this is an Array.
+3. {'d',3,'f',4.3}     <- this is NOT an Array
+
+=> datatype arrayName[size];
+
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+=>Time complexity for binary search:-
+
+after 1st iteration, length of array = n;
+after 2nd iteration, length of array = n/2;
+after 3rd iteration, length of array = (n/2)/2 = n/n^2;
+after k iiteration , length of array = n/2^k;
+
+let the length of array become 1 after k iterations:-
+>n/2^k=1;
+>n=2^k;
+>log2(n)=log2(2^k);
+>log2(n)=klog2(2);
+>k=log2(n);
+
+therefore the time complexity is:-
+O(log2(n))
+
+for linear search the time complexitywas O(n);
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+sorting in array:
+ordering an array in ascending order;
+
+slection sort: Find the minimum element in unsorted array and swap it with element at begining;
+eg: > 12,45,23,51,19,8
+> 8,45,23,51,19,12
+> 8,12,23,51,19,45
+> 8,12,19,51,23,45
+> 8,12,19,23,51,45
+> 8,12,19,23,45,51  //sorted array
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+bubble sort: repeatedly sort two adjacent elements if they are in wrong order
+wrong order= L>R;
+N-1 ITERATIONS BEFORE WE GET SORTED ARRAY.
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+insertion sort: 
+insert an elementfrom unsorted array to its correct position in sorted array;
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+No. of subarrays of an array with n elements = nC2 + n = n*(n+1)/2;
+A subsequence is a sequence that can be derived an array by selecting zero or more elements, without changing
+the order of the remaining elements.
+Number of subsequences of an array with n elements = 2^n;
+Every subarray is a subsequence but every subsequence is not a subarray.
